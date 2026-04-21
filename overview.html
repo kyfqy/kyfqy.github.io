@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>碉楼概况 - 开平碉楼</title>
+<script src="https://modao.cc/agent-py/static/source/js/tailwindcss.3.4.3.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/iconify-icon.min.1.0.7.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/echarts.min.5.4.3.js"></script>
+<style>
+        :root {
+            --color-cream: #F5F5DC;
+            --color-brown: #A67C52;
+            --color-grey: #4A4A4A;
+            --color-red: #8B0000;
+        }
+        body { background-color: var(--color-cream); color: var(--color-grey); }
+        .font-kaiti { font-family: 'Kaiti', 'STKaiti', serif; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+<nav class="fixed w-full z-50 bg-[#F5F5DC]/90 backdrop-blur-sm border-b border-[#A67C52]/20 py-4">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<a class="flex items-center space-x-2" href="index.html">
+<iconify-icon class="text-3xl text-[#8B0000]" icon="ri:ancient-gate-fill"></iconify-icon>
+<span class="text-2xl font-kaiti font-bold text-[#4A4A4A]">开平碉楼</span>
+</a>
+<div class="hidden md:flex space-x-8">
+<a class="hover:text-[#8B0000]" href="index.html">首页</a>
+<a class="text-[#8B0000]" href="overview.html">概况</a>
+<a class="hover:text-[#8B0000]" href="history.html">历史</a>
+<a class="hover:text-[#8B0000]" href="architecture.html">建筑</a>
+<a class="hover:text-[#8B0000]" href="buildings.html">名楼</a>
+<a class="hover:text-[#8B0000]" href="culture.html">价值</a>
+</div>
+</div>
+</nav>
+<header class="pt-32 pb-16 px-6 max-w-7xl mx-auto text-center reveal">
+<h1 class="text-5xl font-kaiti mb-6">碉楼概况</h1>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">在这片沃土上，分布着1833座风格各异的碉楼，它们不仅是建筑，更是历史的回响。</p>
+</header>
+<!-- 地理与统计 -->
+<section class="py-12 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+<div class="bg-white p-8 rounded-lg shadow-sm reveal" style="transition-delay: 0.2s;">
+<h3 class="text-2xl font-kaiti mb-6 border-b pb-2">地理分布</h3>
+<p class="text-gray-600 leading-relaxed mb-6">
+                开平市位于广东省中南部，珠江三角洲西南部。碉楼主要分布在开平市的赤坎、自力村、蚬冈、百合、塘口、马降龙等乡镇，与周围的农田、村落构成了独特的空间景观。
+            </p>
+<div class="flex items-center space-x-4 p-4 bg-[#F5F5DC] rounded">
+<iconify-icon class="text-4xl text-[#8B0000]" icon="mdi:location"></iconify-icon>
+<div>
+<div class="font-bold text-[#4A4A4A]">坐标中心</div>
+<div class="text-sm text-gray-500">广东省开平市赤坎镇及周边</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm reveal" style="transition-delay: 0.4s;">
+<h3 class="text-2xl font-kaiti mb-6 border-b pb-2">数量统计 (2026年数据)</h3>
+<div class="w-full h-[250px]" id="statsChart"></div>
+</div>
+</section>
+<!-- 碉楼分类 -->
+<section class="py-20 bg-[#A67C52]/10 px-6">
+<div class="max-w-7xl mx-auto">
+<h3 class="text-4xl font-kaiti text-center mb-16 reveal">碉楼的三大功能分类</h3>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- 众楼 -->
+<div class="bg-white p-8 rounded-xl shadow-md reveal" style="transition-delay: 0.1s;">
+<div class="w-16 h-16 bg-[#8B0000] text-white rounded-full flex items-center justify-center mb-6">
+<iconify-icon class="text-3xl" icon="mdi:shield-home"></iconify-icon>
+</div>
+<h4 class="text-2xl font-kaiti mb-4">众楼</h4>
+<p class="text-gray-600">由多户人家甚至全村集资兴建，主要用于遇到匪患或洪涝时避难。其特点是空间紧凑，防御性极强。</p>
+</div>
+<!-- 居楼 -->
+<div class="bg-white p-8 rounded-xl shadow-md reveal" style="transition-delay: 0.3s;">
+<div class="w-16 h-16 bg-[#A67C52] text-white rounded-full flex items-center justify-center mb-6">
+<iconify-icon class="text-3xl" icon="mdi:home-modern"></iconify-icon>
+</div>
+<h4 class="text-2xl font-kaiti mb-4">居楼</h4>
+<p class="text-gray-600">由富有的华侨单独兴建，兼具居住与防御功能。装饰最为华丽，生活设施相对完善，反映了主人的审美趣味。</p>
+</div>
+<!-- 更楼 -->
+<div class="bg-white p-8 rounded-xl shadow-md reveal" style="transition-delay: 0.5s;">
+<div class="w-16 h-16 bg-[#4A4A4A] text-white rounded-full flex items-center justify-center mb-6">
+<iconify-icon class="text-3xl" icon="mdi:flashlight"></iconify-icon>
+</div>
+<h4 class="text-2xl font-kaiti mb-4">更楼</h4>
+<p class="text-gray-600">建在村口、路口或河岸边，作为哨岗和瞭望台使用。视野开阔，通常配有探照灯和警报器。</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-[#F5F5DC] border-t border-[#A67C52]/20 py-8 text-center text-sm text-gray-500">
+        © 2026 开平碉楼文化专题 | 2026年04月21日更新
+    </footer>
+<script>
+        // 图表初始化
+        var chartDom = document.getElementById('statsChart');
+        var myChart = echarts.init(chartDom);
+        var option = {
+            tooltip: { trigger: 'item' },
+            legend: { bottom: '0%', left: 'center' },
+            color: ['#8B0000', '#A67C52', '#4A4A4A'],
+            series: [{
+                name: '碉楼类型分布',
+                type: 'pie',
+                radius: ['40%', '70%'],
+                avoidLabelOverlap: false,
+                itemStyle: { borderRadius: 10, borderColor: '#fff', borderWidth: 2 },
+                label: { show: false },
+                data: [
+                    { value: 473, name: '众楼' },
+                    { value: 1149, name: '居楼' },
+                    { value: 221, name: '更楼' }
+                ]
+            }]
+        };
+        myChart.setOption(option);
+
+        // 渐入
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

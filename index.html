@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>开平碉楼——岭南乡村的建筑史诗</title>
+<script src="https://modao.cc/agent-py/static/source/js/tailwindcss.3.4.3.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/iconify-icon.min.1.0.7.js"></script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+        
+        :root {
+            --color-cream: #F5F5DC;
+            --color-brown: #A67C52;
+            --color-grey: #4A4A4A;
+            --color-red: #8B0000;
+        }
+
+        body {
+            background-color: var(--color-cream);
+            color: var(--color-grey);
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .font-kaiti {
+            font-family: 'Kaiti', 'STKaiti', 'Ma Shan Zheng', serif;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/agent-py/static/source/images/placeholder.svg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--color-red);
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+<!-- 导航栏 -->
+<nav class="fixed w-full z-50 bg-[#F5F5DC]/90 backdrop-blur-sm border-b border-[#A67C52]/20 py-4">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<iconify-icon class="text-3xl text-[#8B0000]" icon="ri:ancient-gate-fill"></iconify-icon>
+<span class="text-2xl font-kaiti font-bold tracking-widest text-[#4A4A4A]">开平碉楼</span>
+</div>
+<div class="hidden md:flex space-x-8 font-medium">
+<a class="nav-link text-[#8B0000]" href="index.html">首页</a>
+<a class="nav-link" href="overview.html">概况</a>
+<a class="nav-link" href="history.html">历史</a>
+<a class="nav-link" href="architecture.html">建筑</a>
+<a class="nav-link" href="buildings.html">名楼</a>
+<a class="nav-link" href="culture.html">价值</a>
+</div>
+<button class="bg-[#8B0000] text-white px-6 py-2 rounded shadow-lg hover:bg-opacity-90 transition">探索详情</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="h-screen flex items-center justify-center hero-bg text-white relative">
+<div class="text-center z-10 px-4">
+<h2 class="text-xl md:text-2xl mb-4 tracking-[0.5em] font-light reveal">世界文化遗产</h2>
+<h1 class="text-6xl md:text-8xl font-kaiti mb-8 reveal" style="transition-delay: 0.2s;">开平碉楼与村落</h1>
+<p class="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed opacity-90 reveal" style="transition-delay: 0.4s;">
+                在这里，岭南乡村的质朴与西方建筑的华丽跨时空交汇。1833座碉楼，是百年华侨史的丰碑，更是永恒的艺术瑰宝。
+            </p>
+<div class="mt-12 reveal" style="transition-delay: 0.6s;">
+<a class="inline-block border-2 border-white px-10 py-3 text-lg font-kaiti hover:bg-white hover:text-[#4A4A4A] transition-all duration-300" href="overview.html">
+                    走进这段史诗
+                </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<iconify-icon class="text-3xl" icon="line-md:chevron-small-double-down"></iconify-icon>
+</div>
+</section>
+<!-- 简介 Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="reveal">
+<div class="inline-block px-4 py-1 border-l-4 border-[#8B0000] text-[#8B0000] font-bold mb-4">概览简介</div>
+<h3 class="text-4xl font-kaiti mb-6 text-[#4A4A4A]">中西合璧的建筑奇观</h3>
+<p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    开平碉楼，位于中国广东省开平市，始建于明朝。在20世纪初，随着大量华侨从海外归来，他们将异国他乡的建筑灵感带回故土，融合了防卫、居住功能，并集古希腊、古罗马、哥特式、伊斯兰等风格于一体。
+                </p>
+<div class="flex space-x-8 mt-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-[#A67C52]">1833</div>
+<div class="text-sm text-gray-500">现存碉楼数量</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-[#A67C52]">2007</div>
+<div class="text-sm text-gray-500">入选世遗年份</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-[#A67C52]">15+</div>
+<div class="text-sm text-gray-500">涵盖国家风格</div>
+</div>
+</div>
+</div>
+<div class="relative reveal" style="transition-delay: 0.3s;">
+<img alt="Kaiping Diaolou Architecture" class="rounded-lg shadow-2xl border-8 border-white" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/45f1ac61a04b40a8b88541f099d1da0a.jpg"/>
+<div class="absolute -bottom-8 -right-8 bg-[#A67C52] p-8 text-white max-w-xs hidden lg:block">
+<p class="text-sm italic">“它是中国唯一一个关于华侨文化的建筑遗产。”</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 核心看点 -->
+<section class="bg-[#4A4A4A] py-24 text-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 reveal">
+<h3 class="text-4xl font-kaiti mb-4">探索四大核心模块</h3>
+<div class="h-1 w-20 bg-[#8B0000] mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<!-- 模块1 -->
+<a class="group block reveal" href="overview.html" style="transition-delay: 0.1s;">
+<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4">
+<img alt="Overview" class="object-cover w-full h-full transition duration-500 group-hover:scale-110" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/b67c8f0185984e2bae6807d4b0b30db9.jpg"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-6">
+<div>
+<h4 class="text-2xl font-kaiti">碉楼概况</h4>
+<p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity">地理、分类与统计数据</p>
+</div>
+</div>
+</div>
+</a>
+<!-- 模块2 -->
+<a class="group block reveal" href="history.html" style="transition-delay: 0.2s;">
+<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4">
+<img alt="History" class="object-cover w-full h-full transition duration-500 group-hover:scale-110" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/373eb35f83e844c09e5593abd40f4c1d.jpg"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-6">
+<div>
+<h4 class="text-2xl font-kaiti">历史溯源</h4>
+<p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity">跨越百年的华侨史诗</p>
+</div>
+</div>
+</div>
+</a>
+<!-- 模块3 -->
+<a class="group block reveal" href="architecture.html" style="transition-delay: 0.3s;">
+<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4">
+<img alt="Architecture" class="object-cover w-full h-full transition duration-500 group-hover:scale-110" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/fd991f3449f8426a9de0949687f06ef0.jpg"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-6">
+<div>
+<h4 class="text-2xl font-kaiti">建筑特色</h4>
+<p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity">中西合璧的顶级艺术</p>
+</div>
+</div>
+</div>
+</a>
+<!-- 模块4 -->
+<a class="group block reveal" href="buildings.html" style="transition-delay: 0.4s;">
+<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4">
+<img alt="Famous Buildings" class="object-cover w-full h-full transition duration-500 group-hover:scale-110" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/48cda1ce060a4f658b44678fd752b2ab.jpg"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-6">
+<div>
+<h4 class="text-2xl font-kaiti">代表名楼</h4>
+<p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity">走进自力村与瑞石楼</p>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 底部 -->
+<footer class="bg-[#F5F5DC] border-t border-[#A67C52]/20 py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+<div class="mb-8 md:mb-0">
+<div class="flex items-center space-x-2 mb-4">
+<iconify-icon class="text-3xl text-[#8B0000]" icon="ri:ancient-gate-fill"></iconify-icon>
+<span class="text-xl font-kaiti font-bold tracking-widest text-[#4A4A4A]">开平碉楼文化专题</span>
+</div>
+<p class="text-gray-500 text-sm">© 2026 开平碉楼文化保护小组. 保留所有权利。</p>
+<p class="text-gray-400 text-xs mt-1">更新日期：2026年04月21日</p>
+</div>
+<div class="flex space-x-8 text-gray-600">
+<a class="hover:text-[#8B0000] transition" href="#">友情链接</a>
+<a class="hover:text-[#8B0000] transition" href="#">资源下载</a>
+<a class="hover:text-[#8B0000] transition" href="#">联系我们</a>
+<a class="hover:text-[#8B0000] transition" href="#">隐私政策</a>
+</div>
+</div>
+</footer>
+<script>
+        // 滚动渐入
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

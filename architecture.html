@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>建筑特色 - 开平碉楼</title>
+<script src="https://modao.cc/agent-py/static/source/js/tailwindcss.3.4.3.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/iconify-icon.min.1.0.7.js"></script>
+<style>
+        :root { --color-cream: #F5F5DC; --color-brown: #A67C52; --color-grey: #4A4A4A; --color-red: #8B0000; }
+        body { background-color: var(--color-cream); color: var(--color-grey); }
+        .font-kaiti { font-family: 'Kaiti', 'STKaiti', serif; }
+        .card-inner { transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; }
+        .card:hover .card-inner { transform: rotateY(180deg); }
+        .card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 12px; overflow: hidden; }
+        .card-back { background: var(--color-brown); color: white; transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; padding: 20px; }
+        
+        /* 放大镜交互 */
+        #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 1000; align-items: center; justify-content: center; }
+    </style>
+</head>
+<body>
+<nav class="fixed w-full z-50 bg-[#F5F5DC]/90 border-b border-[#A67C52]/20 py-4">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<a class="flex items-center space-x-2" href="index.html">
+<iconify-icon class="text-3xl text-[#8B0000]" icon="ri:ancient-gate-fill"></iconify-icon>
+<span class="text-2xl font-kaiti font-bold tracking-widest text-[#4A4A4A]">开平碉楼</span>
+</a>
+<div class="hidden md:flex space-x-8">
+<a href="index.html">首页</a>
+<a href="overview.html">概况</a>
+<a href="history.html">历史</a>
+<a class="text-[#8B0000]" href="architecture.html">建筑</a>
+<a href="buildings.html">名楼</a>
+<a href="culture.html">价值</a>
+</div>
+</div>
+</nav>
+<section class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<header class="text-center mb-20">
+<h1 class="text-5xl font-kaiti mb-6 text-[#4A4A4A]">中西合璧：建筑博览</h1>
+<p class="text-lg text-gray-500 max-w-2xl mx-auto">开平碉楼是世界罕见的“建筑艺术博物馆”，它将欧洲多种流派与岭南乡土工艺完美融合。</p>
+</header>
+<div class="grid md:grid-cols-3 gap-10">
+<!-- 柱廊 -->
+<div class="card h-[400px] relative">
+<div class="card-inner h-full w-full">
+<div class="card-front shadow-xl border-4 border-white">
+<img alt="Columns" class="w-full h-full object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/88c8d69e9b514bcabd07b890ac2c84f1.jpg"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+<h3 class="text-2xl font-kaiti">古希腊/罗马柱式</h3>
+</div>
+</div>
+<div class="card-back text-center">
+<iconify-icon class="text-5xl mb-4 mx-auto" icon="emojione-monotone:column"></iconify-icon>
+<h4 class="text-xl mb-4 font-kaiti">古典主义风格</h4>
+<p class="text-sm leading-relaxed">碉楼的柱子常采用多立克、爱奥尼或科林斯柱式，通过混凝土和灰塑工艺，在乡村土地上重现古典荣光。</p>
+<button class="mt-6 border border-white px-4 py-2 rounded text-xs" onclick="openLightbox('/agent-py/static/source/images/placeholder.svg', '柱廊细节', '精美的科林斯式柱头，叶片纹路栩栩如生。')">放大查看</button>
+</div>
+</div>
+</div>
+<!-- 山花 -->
+<div class="card h-[400px] relative">
+<div class="card-inner h-full w-full">
+<div class="card-front shadow-xl border-4 border-white">
+<img alt="Pediment" class="w-full h-full object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/1d934b59ad3e4763a023cff62a02ca9e.jpg"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+<h3 class="text-2xl font-kaiti">巴洛克式山花</h3>
+</div>
+</div>
+<div class="card-back text-center">
+<iconify-icon class="text-5xl mb-4 mx-auto" icon="gis:shrine"></iconify-icon>
+<h4 class="text-xl mb-4 font-kaiti">华丽的曲线艺术</h4>
+<p class="text-sm leading-relaxed">在碉楼顶部，常常可以看到充满动感的巴洛克曲线山花，以及象征“年年有余”的灰塑鱼纹等中国传统图案。</p>
+<button class="mt-6 border border-white px-4 py-2 rounded text-xs" onclick="openLightbox('/agent-py/static/source/images/placeholder.svg', '山花灰塑', '中西合璧的典型装饰，曲线优美，寓意吉祥。')">放大查看</button>
+</div>
+</div>
+</div>
+<!-- 铁窗/防御 -->
+<div class="card h-[400px] relative">
+<div class="card-inner h-full w-full">
+<div class="card-front shadow-xl border-4 border-white">
+<img alt="Defense" class="w-full h-full object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-04-21/990d329058e04ee4ae61023a8bde3473.jpg"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+<h3 class="text-2xl font-kaiti">冷峻的防御工事</h3>
+</div>
+</div>
+<div class="card-back text-center">
+<iconify-icon class="text-5xl mb-4 mx-auto" icon="mdi:security"></iconify-icon>
+<h4 class="text-xl mb-4 font-kaiti">铁门与枪眼</h4>
+<p class="text-sm leading-relaxed">墙体厚实，窗户细窄且配有厚重的铁板。角楼（俗称“燕子窝”）伸出墙外，设有射击孔，全方位保障安全。</p>
+<button class="mt-6 border border-white px-4 py-2 rounded text-xs" onclick="openLightbox('/agent-py/static/source/images/placeholder.svg', '防御构造', '厚达一尺的青砖墙与德国进口钢板，构成坚不可摧的堡垒。')">放大查看</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+<div class="max-w-4xl p-4 text-white text-center" onclick="event.stopPropagation()">
+<img alt="Zoomed" class="max-h-[70vh] mx-auto rounded mb-6" id="lightbox-img" src=""/>
+<h2 class="text-3xl font-kaiti mb-4" id="lightbox-title"></h2>
+<p class="text-lg opacity-80" id="lightbox-desc"></p>
+<button class="mt-8 text-white/50 hover:text-white" onclick="closeLightbox()">点击空白处关闭</button>
+</div>
+</div>
+<script>
+        function openLightbox(src, title, desc) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-desc').innerText = desc;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

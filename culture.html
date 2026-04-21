@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>文化价值与传承 - 开平碉楼</title>
+<script src="https://modao.cc/agent-py/static/source/js/tailwindcss.3.4.3.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/iconify-icon.min.1.0.7.js"></script>
+<style>
+        :root { --color-cream: #F5F5DC; --color-brown: #A67C52; --color-grey: #4A4A4A; --color-red: #8B0000; }
+        body { background-color: var(--color-cream); color: var(--color-grey); }
+        .font-kaiti { font-family: 'Kaiti', 'STKaiti', serif; }
+        
+        .silhouette-container { position: relative; height: 200px; overflow: hidden; }
+        .silhouette { 
+            position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%);
+            width: 300px; opacity: 0; transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .silhouette-container:hover .silhouette { bottom: 0; opacity: 0.2; }
+    </style>
+</head>
+<body>
+<nav class="fixed w-full z-50 bg-[#F5F5DC]/90 border-b border-[#A67C52]/20 py-4">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<a class="flex items-center space-x-2" href="index.html">
+<iconify-icon class="text-3xl text-[#8B0000]" icon="ri:ancient-gate-fill"></iconify-icon>
+<span class="text-2xl font-kaiti font-bold tracking-widest text-[#4A4A4A]">开平碉楼</span>
+</a>
+<div class="hidden md:flex space-x-8">
+<a href="index.html">首页</a>
+<a href="overview.html">概况</a>
+<a href="history.html">历史</a>
+<a href="architecture.html">建筑</a>
+<a href="buildings.html">名楼</a>
+<a class="text-[#8B0000]" href="culture.html">价值</a>
+</div>
+</div>
+</nav>
+<section class="pt-32 pb-24 px-6 max-w-4xl mx-auto">
+<header class="text-center mb-16">
+<h1 class="text-5xl font-kaiti mb-6">文化价值：跨越山海的精神寄托</h1>
+<div class="h-1 w-24 bg-[#8B0000] mx-auto"></div>
+</header>
+<div class="space-y-12 text-lg text-gray-700 leading-relaxed">
+<div class="bg-white p-8 rounded-lg shadow-sm border-l-8 border-[#A67C52]">
+<h3 class="text-2xl font-kaiti mb-4 text-[#4A4A4A]">华侨文化的丰碑</h3>
+<p>
+                    开平碉楼是华侨文化的独特载体。它见证了华侨在海外奋斗的辛酸与辉煌，也体现了他们落叶归根、光宗耀祖的传统思想。每一座碉楼里，都曾生活过一个与世界紧密相连的家庭。
+                </p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm border-l-8 border-[#8B0000]">
+<h3 class="text-2xl font-kaiti mb-4 text-[#4A4A4A]">多元文明的交汇</h3>
+<p>
+                    它是中西文化交流在乡村地区的杰出范例。在这里，西方的建筑形式并没有喧宾夺主，而是与岭南的自然环境、宗法社会完美融合，形成了一种独特的“侨乡文化景观”。
+                </p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm border-l-8 border-[#4A4A4A]">
+<h3 class="text-2xl font-kaiti mb-4 text-[#4A4A4A]">现代保护与传承</h3>
+<p>
+                    今天，开平碉楼不仅是受保护的文物，更是活着的社区。政府与社会各界致力于“活化利用”，让古老的碉楼在数字时代焕发新生。2026年，我们通过虚拟现实、大数据监测等手段，全方位守护这片人类共同的遗产。
+                </p>
+</div>
+</div>
+</section>
+<!-- 交互结尾 -->
+<section class="bg-[#4A4A4A] py-24 text-white text-center relative overflow-hidden">
+<div class="max-w-4xl mx-auto px-6 z-10 relative">
+<h2 class="text-4xl font-kaiti mb-8">守护岭南乡愁，传承世界文明</h2>
+<p class="text-xl opacity-70 mb-12">在这个瞬息万变的世界，愿这些石砌的巨人永远屹立在田野之上。</p>
+<div class="flex justify-center space-x-6">
+<button class="bg-[#8B0000] px-8 py-3 rounded text-lg font-bold hover:bg-opacity-80 transition">支持保护计划</button>
+<a class="border border-white px-8 py-3 rounded text-lg hover:bg-white hover:text-[#4A4A4A] transition" href="index.html">返回首页</a>
+</div>
+</div>
+<!-- 碉楼剪影动画 -->
+<div class="silhouette-container mt-20">
+<p class="text-xs opacity-40 mb-4 tracking-[1em]">鼠标悬停于此</p>
+<div class="silhouette flex justify-center items-end space-x-4">
+<!-- 这里使用Iconify模拟简易剪影 -->
+<iconify-icon class="text-[120px] text-white" icon="ri:ancient-pavilion-line"></iconify-icon>
+<iconify-icon class="text-[180px] text-white" icon="ri:ancient-gate-line"></iconify-icon>
+<iconify-icon class="text-[140px] text-white" icon="ri:ancient-pavilion-line"></iconify-icon>
+</div>
+</div>
+</section>
+<footer class="bg-white py-12 px-6">
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm text-gray-500">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<iconify-icon class="text-2xl text-[#8B0000]" icon="ri:ancient-gate-fill"></iconify-icon>
+<span class="text-lg font-kaiti font-bold text-[#4A4A4A]">开平碉楼</span>
+</div>
+<p>本项目致力于开平碉楼文化的数字化传播与保护。</p>
+</div>
+<div class="space-y-2">
+<h4 class="font-bold text-[#4A4A4A]">快速链接</h4>
+<a class="block hover:text-[#8B0000]" href="overview.html">概况介绍</a>
+<a class="block hover:text-[#8B0000]" href="architecture.html">建筑分析</a>
+<a class="block hover:text-[#8B0000]" href="buildings.html">名楼导览</a>
+</div>
+<div>
+<h4 class="font-bold text-[#4A4A4A]">联系信息</h4>
+<p>地址：广东省开平市赤坎镇古镇大道1号</p>
+<p>电话：0750-XXXXXXX</p>
+<p>更新：2026年04月21日</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
